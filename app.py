@@ -106,7 +106,7 @@ def run_security_agents(target_host: str, attacker_ip: str, command: str, cpu_me
             report_dict = json.loads(clean_json_str)
             
             # 3. Print a beautiful, human-readable interface to the terminal
-            print("\n" + "EXECUTIVE INCIDENT BRIEF 🚨".center(60, "="))
+            print("\n" + "EXECUTIVE INCIDENT BRIEF".center(60, "="))
             print(f"SUMMARY  : {report_dict.get('incident_summary', 'N/A')}")
             print(f"SEVERITY : Level {report_dict.get('severity_level', 'Unknown')} / 5")
             
