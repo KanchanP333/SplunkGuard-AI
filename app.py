@@ -89,7 +89,10 @@ def run_security_agents(target_host: str, attacker_ip: str, command: str, cpu_me
     - CPU Impact: {cpu_metric}%
     - Malware Analyst Verdict: {threat_analysis}
     
-    Output ONLY valid JSON with these exact keys: "incident_summary", "severity_level", "recommended_containment_action". Do not include markdown formatting or extra text.
+    Output ONLY valid JSON with these exact keys: "incident_summary", "severity_level", "recommended_containment_action". 
+    
+    CRITICAL INSTRUCTION: For the "severity_level" key, you MUST output ONLY a single uppercase string from this exact list: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]. Do not use numbers.
+    Do not include markdown formatting, conversational text, or extra characters outside the JSON object.
     """
 
     response_2 = ollama.chat(model='llama3', messages=[{'role': 'user', 'content': synth_prompt}])
