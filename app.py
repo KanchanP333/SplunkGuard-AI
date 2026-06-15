@@ -91,7 +91,10 @@ def run_security_agents(target_host: str, attacker_ip: str, command: str, cpu_me
     
     Output ONLY valid JSON with these exact keys: "incident_summary", "severity_level", "recommended_containment_action". 
     
-    CRITICAL INSTRUCTION: For the "severity_level" key, you MUST output ONLY a single uppercase string from this exact list: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]. Do not use numbers.
+    CRITICAL INSTRUCTIONS: 
+    1. For "severity_level", you MUST output ONLY a single uppercase string from this exact list: ["CRITICAL", "HIGH", "MEDIUM", "LOW"].
+    2. For "recommended_containment_action", you MUST output a nested JSON object containing exactly two keys: "type" (a single word classifying the action, e.g., "Network", "Endpoint", "Identity") and "value" (a brief sentence describing the action).
+    
     Do not include markdown formatting, conversational text, or extra characters outside the JSON object.
     """
 
