@@ -1,5 +1,7 @@
 # Autonomous Incident Escort - Splunk Hackathon
 
+[![Demo](https://img.shields.io/badge/SplunkGuard--AI-green)](https://drive.google.com/file/d/1xljIaf49VBCmZU_e_JVlPGMlxlGRfz4A/view?usp=sharing)
+
 An intelligent incident response system that orchestrates local AI agents to analyze security threats in real-time. This application integrates Splunk observability data with a multi-agent LLM system to provide automated threat analysis and incident reporting.
 
 ## Project Overview
